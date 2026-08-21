@@ -1,0 +1,7 @@
+# Project exclude paths
+/node_modules/
+/node_modules/dotenv/
+/node_modules/express/LICENSE
+/node_modules/express/Readme.md
+/node_modules/pg/LICENSE
+/node_modules/pg/README.md
