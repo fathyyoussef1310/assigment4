@@ -5,3 +5,4 @@
 /node_modules/express/Readme.md
 /node_modules/pg/LICENSE
 /node_modules/pg/README.md
+.env
