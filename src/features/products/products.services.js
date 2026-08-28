@@ -30,5 +30,6 @@ module.exports = {
     getAllProducts,
     getProductsById,
     updateProduct,
+    deleteProduct,
 }
 

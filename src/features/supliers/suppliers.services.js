@@ -25,6 +25,9 @@ const updateSuppliers = async (supplierId, supplier) => {
 const deleteSuppliers = async (supplierId) => {
     return await suppliersRepository.deleteSuppliers(supplierId);
 };
+const getSupplierStarts = async (supplierName) => {
+    return await  suppliersRepository.getNamesStart('F')
+}
 
 module.exports = {
     create,
@@ -32,4 +35,5 @@ module.exports = {
     getAllSuppliers,
     updateSuppliers,
     deleteSuppliers,
+    getSupplierStarts
 };

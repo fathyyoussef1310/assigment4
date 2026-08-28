@@ -9,5 +9,9 @@ CREATE TABLE products (
      REFERENCES suppliers(id)
 );
 
+ALTER TABLE products ADD COLUMN category VARCHAR(255);
 
-ALTER TABLE products ALTER COLUMN name SET NOT NULL ,
+ALTER TABLE products DROP COLUMN category;
+
+
+ALTER TABLE products ALTER COLUMN name SET NOT NULL;

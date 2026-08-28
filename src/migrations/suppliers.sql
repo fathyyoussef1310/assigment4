@@ -3,3 +3,5 @@ CREATE TABLE suppliers(
     name VARCHAR(255) NOT NULL ,
     phone VARCHAR(250) NOT NULL
 )
+
+ALTER TABLE suppliers ALTER COLUMN phone TYPE VARCHAR(15);

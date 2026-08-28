@@ -49,6 +49,15 @@ const deleteSuppliers = async (supplierId) => {
 
     return result.rows[0];
 };
+const getNamesStart = async (supplierName) => {
+    const result = await pool.query(
+        `SELECT * FROM suppliers
+         WHERE name LIKE $1`,
+        [`${supplierName}%`]
+    );
+
+    return result.rows;
+};
 
 module.exports = {
     createSupplier,
@@ -56,4 +65,5 @@ module.exports = {
     getAllSuppliers,
     updateSuppliers,
     deleteSuppliers,
+    getNamesStart,
 };

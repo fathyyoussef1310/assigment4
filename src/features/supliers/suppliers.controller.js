@@ -65,6 +65,19 @@ const updateSuppliers = async (req, res, next) => {
     }
 };
 
+const getSupplierStarts = async (req, res, next) => {
+    try {
+        const result = await suppliersRepository.getNamesStart('F');
+
+        res.status(200).json({
+            status: 'success',
+            data: result
+        });
+    } catch (err) {
+        next(err);
+    }
+};
+
 const deleteSuppliers = async (req, res, next) => {
     try {
         const { id } = req.params;
@@ -87,4 +100,5 @@ module.exports = {
     getSuppliersById,
     updateSuppliers,
     deleteSuppliers,
+    getSupplierStarts,
 };
